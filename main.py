@@ -115,7 +115,7 @@ def main(scaler, model):
                         dataframe_formating(sample_data)
                         process_and_display_results(sample_data, scaler, model, packet_types, source_ips, log_suspicious_only)
 
-                time.sleep(0)
+                time.sleep(1)
 
             except KeyboardInterrupt:
                 logging.info("Выход из программы.")
