@@ -98,8 +98,8 @@ def main(scaler, model):
         setup_logging(default_log_file_path)
 
         # Вывод параметров запуска программы
-        print(f"Программа запущена с следующими параметрами: Только подозрительные: {log_suspicious_only}, Тип обрабатываемых пакетов: {packet_type}, Путь до лог файла: {default_log_file_path}.")
-
+        print(f"Программа будет запущена через 5 сек с следующими параметрами: Только подозрительные: {log_suspicious_only}, Тип обрабатываемых пакетов: {packet_type}, Путь до лог файла: {default_log_file_path}.\n Чтобы выйти из программы нажимайте CTRL+C")
+        time.sleep(5)
         # Бесконечный цикл обработки данных
         while True:
             try:
